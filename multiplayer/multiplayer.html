@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulls and Cows | Multiplayer</title>
+    <script type="text/javascript" src="multiplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="split left">
+      <div class="split left">
+        <div class="centered">
+          The results:
+          <br /><br />
+          <span id="pl1Results" style="color: red"></span>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered" id="firstHalf">
+          <p id="captionPl1">Enter your secret number <br> (or generate one):</p>
+
+          <input
+            type="number"
+            name="sum"
+            id="Pl1SecretNumber"
+          />
+          <br />
+          <span
+            id="validationOutputPl1"
+            style="color: red; margin-left: 1px"
+          ></span>
+          <br />
+          <br />
+          <input
+            type="button"
+            onclick="generatePlayer1Number()"
+            value="Generate"
+          />
+          <input type="button" onclick="submitPl1Num()" value="Submit" />
+          <br />
+          <span id="output" style="color: red; margin-left: 50px"></span>
+        </div>
+
+        <div class="centered" id="guessModePl1" style="display: none">
+          <form>
+            <p>Enter your guess:</p>
+            <input type="number" name="guess" id="Pl1Guess" />
+            <br />
+            <span id="validationGuessPl1" style="color: red; margin-left: 1px"></span>
+            <br />
+            <input type="button" onclick="submitPl1Guess()" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="split left">
+        <div class="centered">
+          The results:
+          <br />
+          <span id="pl2Results" style="color: red"></span>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered" id="secondHalf">
+          <p id="captionPl2">Enter your secret number <br> (or generate one):</p>
+          <input
+            type="number"
+            name="sum"
+            id="Pl2SecretNumber"
+          />
+          <br />
+          <span
+            id="validationOutputPl2"
+            style="color: red; margin-left: 1px"
+          ></span>
+          <br /><br />
+          <input
+            type="button"
+            onclick="generatePlayer2Number();"
+            value="Generate"
+          />
+          <input type="button" onclick="submitPl2Num()" value="Submit" />
+          <br />
+          <span id="resOutput2" style="color: red"></span>
+          <span id="output2" style="color: red; margin-left: 50px"></span>
+        </div>
+
+        <div class="centered" id="igrata2" style="display: none">
+          <form>
+            <p>Enter your guess:</p>
+            <input type="number" name="guess" id="Pl2Guess" />
+            <br />
+            <span id="validationGuessPl2" style="color: red; margin-left: 1px"></span>
+            <br />
+            <input type="button" onclick="submitPl2Guess()" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+  background-color: black;
+  font-size: 14pt;
+}
+
+.split {
+  height: 98%;
+  width: 49.82%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  overflow-y: hidden; 
+}
+
+.left {
+  left: 0;
+  background-color:white;
+  overflow-y: hidden; 
+}
+
+.right {
+  right: 0;
+  background-color:white;
+  overflow-y: hidden; 
+}
+
+.centered {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  text-align: center;
+}
